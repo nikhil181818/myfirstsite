@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEC Kukas</title>
+    <style>
+        /* 1. Global Styles & Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. Header and Navigation */
+        header {
+            background-color: #0b2545; /* Deep Navy Blue */
+            padding: 10px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Puts logo on left, links on right */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo {
+            height: 50px; /* Keeps the logo neat and uniform in the header */
+            width: auto;
+            border-radius: 4px;
+            box-shadow: none; /* Removes shadow just for the header logo */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: capitalize;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #134074; /* Lighter Blue */
+            color: #eef4f8;
+        }
+
+        /* 3. Typography & Headings */
+        h1 {
+            text-align: center;
+            color: #0b2545;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 40px 0 20px 0;
+            font-size: 2.2rem;
+        }
+
+        /* 4. Data Table Styling */
+        table {
+            width: 80%;
+            max-width: 600px;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        caption {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #134074;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        th, td {
+            padding: 14px 20px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #134074;
+            color: #ffffff;
+        }
+
+        th {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #134074;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        td {
+            text-transform: capitalize;
+        }
+
+        /* 5. Main Image Section */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+            max-width: 90%;
+        }
+
+        .main-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+     <header>
+        <nav>
+            <!-- Logo positioned on the left side of the header -->
+            <a href="index.html" class="logo-link">
+                <img src="OIP.webp" alt="logo page" class="header-logo">
+            </a>
+            
+            <!-- Navigation Links grouped together on the right -->
+            <div class="nav-links">
+                <a href="index.html">home</a>
+                <a href="courses.html">courses</a>
+                <a href="contact.html">contact us</a>
+                <a href="about.html">about</a>
+            </div>
+        </nav>
+     </header>
+
+     <h1>welcome to jaipur engineering college</h1>
+
+     <table>
+        <caption>BS.c courses 2026</caption>
+        <thead>
+            <tr><th>courses</th><th>duration</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>computer science</td><td>3 year</td></tr>
+            <tr><td>maths</td><td>3 year</td></tr>
+        </tbody>
+     </table>
+
+     <div class="image-container">
+         <img src="images\download.webp" alt="home page" class="main-img" width="500">
+     </div>
+
+</body>
+</html>
